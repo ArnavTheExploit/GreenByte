@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Pickup - GreenByte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" width="40">
+            GreenByte
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pickup.html" class="active">Request Pickup</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="admin.html">Admin</a>
+        </div>
+    </nav>
+
+    <section class="container" style="max-width: 600px;">
+        <div class="card">
+            <h1 style="margin-bottom: 2rem;">Schedule E-Waste Pickup</h1>
+            <form id="pickupForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="1234567890">
+                </div>
+
+                <div class="form-group">
+                    <label for="deviceType">Device Type</label>
+                    <select id="deviceType" name="deviceType" required>
+                        <option value="">Select Device...</option>
+                        <option value="Laptop">Laptop/Computer</option>
+                        <option value="Mobile">Mobile Phone/Tablet</option>
+                        <option value="Appliances">Home Appliances</option>
+                        <option value="Accessories">Accessories (cables, etc)</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Pickup Address</label>
+                    <textarea id="address" name="address" rows="3" required
+                        placeholder="Enter full address..."></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Logo" width="40">
+                        GreenByte
+                    </div>
+                    <p>Empowering communities to responsibly manage e-waste for a greener, cleaner future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pickup.html">Request Pickup</a></li>
+                        <li><a href="awareness.html">Awareness</a></li>
+                        <li><a href="admin.html">Admin Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@greenbyte.com</p>
+                    <p>Phone: +1 555-0123</p>
+                    <p>Address: 123 Eco Lane, Green City, Earth</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GreenByte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/pickup.js"></script>
+</body>
+
+</html>

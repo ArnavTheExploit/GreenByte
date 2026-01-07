@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - GreenByte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Logo" width="40">
+            GreenByte
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pickup.html">Request Pickup</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="admin.html" class="active">Admin</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+            <h1>Pickup Requests</h1>
+            <button class="btn btn-sm" onclick="fetchRequests()">Refresh List</button>
+        </div>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Device</th>
+                        <th>Qty</th>
+                        <th>Address</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="requestsTableBody">
+                    <!-- Rows will be populated by JS -->
+                    <tr>
+                        <td colspan="7" style="text-align: center;">Loading requests...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Logo" width="40">
+                        GreenByte
+                    </div>
+                    <p>Empowering communities to responsibly manage e-waste for a greener, cleaner future.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pickup.html">Request Pickup</a></li>
+                        <li><a href="awareness.html">Awareness</a></li>
+                        <li><a href="admin.html">Admin Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: support@greenbyte.com</p>
+                    <p>Phone: +1 555-0123</p>
+                    <p>Address: 123 Eco Lane, Green City, Earth</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GreenByte. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>
